@@ -220,7 +220,6 @@ if __name__ == "__main__":
     # 接收的用户
     users = config["user"]
     # 传入地区获取天气信息
-    name = config["name"]
     region = config["region"]
     weather, temp, wind_dir = get_weather(region)
     note_ch = config["note_ch"]
@@ -232,4 +231,3 @@ if __name__ == "__main__":
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
     os.system("pause")
-
