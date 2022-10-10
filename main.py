@@ -192,6 +192,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     response = post(url, headers=headers, json=data).json()
     if response["errcode"] == 40037:
         print("推送消息失败，请检查模板id是否正确")
+        print("当前模板id{}".format(data.template_id))
     elif response["errcode"] == 40036:
         print("推送消息失败，请检查模板id是否为空")
     elif response["errcode"] == 40003:
