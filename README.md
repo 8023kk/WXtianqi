@@ -11,7 +11,6 @@ https://www.coolapk.com/feed/38579891?shareKey=NGI3ZGZlZTM4MDBjNjMwMzdlM2M~&shar
 
 模板内容如下：
 
-💓 可爱的：{{name.DATA}}
 📅 今天是{{date.DATA}}
 🌍 地区：{{region.DATA}}
 ☁️ 天气：{{weather.DATA}}
